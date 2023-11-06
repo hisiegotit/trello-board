@@ -83,13 +83,7 @@
           </draggable>
 
           <footer>
-            <NewTask
-              @add-task="
-                (e) => {
-                  column.tasks.push(e);
-                }
-              "
-            ></NewTask>
+            <NewTask @add-task="column.tasks.push($event)"></NewTask>
           </footer>
         </div>
       </template>
